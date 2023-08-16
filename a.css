@@ -1,0 +1,214 @@
+#visor {
+    background-color: #bdffb4;
+    text-align: right;
+    display: block;
+    width:298px;
+    height: 40px;
+    color:#FFD700;
+    float: center;
+    border: #00008B solid 1px;
+    font-size: 11px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: right;
+    box-shadow:1px 2px 3px 1px #0000CD;
+    text-shadow:1px 1px 3px #000000;
+    font-family: 'Alfa Slab One', cursive;
+   }
+   input[type='checkbox']{
+   
+    -webkit-apperance: none ;
+    visibility: hidden;
+    display:none;
+   }
+   .check{
+     position: relative;
+     display: block;
+     width: 40px;
+     height: 20px;
+     background: #092c3e;
+     cursor: pointer;
+     border-radius: 20px;
+     overflow:hidden;
+     transition: ease-in 0.5s;
+   }
+   input[type='checkbox']:checked ~ .check{
+     background: #fff;
+     box-shadow: 0 0 0 3000px #092c3e;
+   
+   }
+   .check:before{
+     content: '';
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     background: #fff;
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     transition: 0.5s;
+   }
+   input[type='checkbox']:checked ~ .check:before{
+     transform: translateX(-50px);
+   }
+   .check:after{
+     content: '';
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     background: #092c09;
+     width: 16px;
+     height: 16px;
+     border-radius: 50%;
+     transition: 0.5s;
+     transform: translateX(50px);
+   }
+   input[type='checkbox']:checked ~ .check:after{
+     transform: translateX(0px);
+   }
+   table {
+    margin: 0 auto 0 auto;
+   }
+   form input {
+    width: 100%;
+    border: solid #ccc 1px;
+    font-size: 11px;
+    margin-bottom: 10px;
+   }
+   
+   form input.num {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #FF7F00;
+    color:#FFD700;
+   }
+   
+   form input.operado {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-color: #b2b2b2;
+   }
+   
+   
+   form input.limpa {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-color: #FF7F00;
+      color:rgb(255, 0, 0);
+    }
+   
+   #pe {
+   text-align: center;
+      float: center;
+      width: 146px;
+      box-shadow:1px 2px 3px 1px #00008B;
+      text-shadow:1px 1px 3px #000000;
+      font-family: 'Alfa Slab One', cursive;
+      background-color: #8B1A1A;
+      color: #006400;
+   }
+   #pd {
+      text-align: center;
+      float: center;
+      width: 146px;
+      box-shadow:1px 2px 3px 1px #0000CD;
+      text-shadow:1px 1px 3px #000000;
+      font-family: 'Alfa Slab One', cursive;
+      background-color: #8B1A1A;
+      color: #006400;
+   }
+   table {
+      margin: 0 auto 0 auto;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+   }
+   
+   body {
+      background-color: #fff;
+   }
+   form input {
+     width: 250px;
+     font-size: 30px;
+     background-color: #FFF68F;
+     color: #CD5C5C;
+     border: #00008B solid 1px;
+     text-align: right;
+     box-shadow:1px 2px 3px 1px #0000CD;
+     text-shadow:1px 1px 3px #000000;
+     font-family: 'Alfa Slab One', cursive;
+   }
+   form input.num {
+      display: block;
+      width: 70px;
+      height: 43px;
+      color: #00CD66;
+      cursor:pointer;
+   }
+   form input.operado {
+    display: block;
+    width: 70px;
+    height: 43px;
+    background-color: rgb(174, 230, 163);
+    cursor: pointer;
+   }
+   form input.num:hover {
+   animation: shake 0.5s;
+   animation-iteration-count: infinite;
+   background-color: aqua;
+   }
+   form input.operado:hover {
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+      background-color: aqua;
+   }
+   @keyframes shake {
+    10%, 90% {
+       transform: translate3d(-1px, 0, 0);
+     }
+      20%, 80% {
+       transform: translate3d(2px, 0, 0);
+     }
+      30%, 50%, 70% {
+       transform: translate3d(-2px, 0, 0);
+     }
+      40%, 60% {
+       transform: translate3d(2px, 0, 0);
+     }
+     from {background-color: #092c09;}
+     to {background-color: white;}
+   }
+   #FF7F24
+   form input#jorge:hover{
+       animation: fade 0.5s;
+       animation-iteration-count: infinite;
+   }
+   @keyframes fade {
+      0% {
+          background: url(dio.gif);
+        }
+        50% {
+          background: url(dio.gif);
+        }
+        100% {
+          background: url(dio.gif);
+        }     
+      }
+      /*Fontes que pode ser usada
+   font-family: 'Notable', sans-serif;
+   font-family: 'Alfa Slab One', cursive;
+   font-family: 'Shrikhand', cursive;
+   font-family: 'Press Start 2P', cursive; */
+      /* Isso aqui faz o botão da um giro 360 duplo carpado muito foda ( tem que colocar na função
+      do keyframe)
+      from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }*/
+   
+ 
